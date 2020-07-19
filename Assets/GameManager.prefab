@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8547768601827974677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8547768601827974679}
+  - component: {fileID: 8547768601827974676}
+  - component: {fileID: 8547768601827974673}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: GameController
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8547768601827974679
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8547768601827974677}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 461, y: 259.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8547768601827974676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8547768601827974677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddfd378afcce5475b91f9dc453e9702a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  levels:
+  - name: 1
+    puzzleSprite: {fileID: 21300000, guid: 995d95c669cde44299f868713496f23e, type: 3}
+    time: 5
+    levelDirections: 00000000010000000200000003000000
+    levelCell: 00000000010000000300000002000000
+    levelStartCell: 01000000000000000300000002000000
+    finishStartCell: 01000000000000000200000003000000
+    levelLayout: {fileID: 0}
+    symbols:
+    - {fileID: 21300000, guid: 5d6085d59b4f54c328fdaf6e876c3dda, type: 3}
+    - {fileID: 21300000, guid: ac055980d9f28499a8dc02637d70277a, type: 3}
+    - {fileID: 21300000, guid: ef6f8fe435450419daff9e63091d6cec, type: 3}
+    - {fileID: 21300000, guid: d579f021e1ec64ee69deebec09e2a202, type: 3}
+  - name: 2
+    puzzleSprite: {fileID: 21300000, guid: 995d95c669cde44299f868713496f23e, type: 3}
+    time: 10
+    levelDirections: 02000000000000000100000003000000
+    levelCell: 02000000000000000100000003000000
+    levelStartCell: 
+    finishStartCell: 
+    levelLayout: {fileID: 0}
+    symbols:
+    - {fileID: 21300000, guid: e77f66599e7fe4c88a74d176e6f28811, type: 3}
+    - {fileID: 21300000, guid: da8d258cd3ad744b4b1332d74bc514ab, type: 3}
+    - {fileID: 21300000, guid: 9eb52fe064ad04ca4be9ba22874818e5, type: 3}
+    - {fileID: 21300000, guid: b8d767043e4874de587dcb6b1a352515, type: 3}
+  actionContent:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentLevel: 0
+  timerText: {fileID: 0}
+  puzzleCanvas: {fileID: 0}
+  startGameCanvas: {fileID: 0}
+  gameOverCanvas: {fileID: 0}
+  nextLevelCanvas: {fileID: 0}
+  playerPrefab: {fileID: 3972915938875522186, guid: 08c66f6f15432498fabb40294c332dd7,
+    type: 3}
+  legendCanvas: {fileID: 0}
+  legendChips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  legendBulbs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  symbols:
+  - {fileID: 21300000, guid: e77f66599e7fe4c88a74d176e6f28811, type: 3}
+  - {fileID: 21300000, guid: da8d258cd3ad744b4b1332d74bc514ab, type: 3}
+  - {fileID: 21300000, guid: b8d767043e4874de587dcb6b1a352515, type: 3}
+  - {fileID: 21300000, guid: 9eb52fe064ad04ca4be9ba22874818e5, type: 3}
+  initialPosition:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  playerInstance: {fileID: 0}
+  rows:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  puzzleStarterImage: {fileID: 0}
+  hasStarted: 0
+--- !u!114 &8547768601827974673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8547768601827974677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75c1595e1d7dc4f75bfdeaca73d6f047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixerGroup: {fileID: 0}
+  themeVolume: 0
+  sounds:
+  - name: Tick
+    clip: {fileID: 8300000, guid: 161533ac48eab4745a6e987ec776a173, type: 3}
+    volume: 0.69
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: TickTickTick
+    clip: {fileID: 8300000, guid: 14beace81865f4c2e82e3e04f12fa393, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: jet1
+    clip: {fileID: 8300000, guid: 19c4c098e8db747f8884679e0feacc7f, type: 3}
+    volume: 0.5
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: jet2
+    clip: {fileID: 8300000, guid: 19c4c098e8db747f8884679e0feacc7f, type: 3}
+    volume: 0.5
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: jet3
+    clip: {fileID: 8300000, guid: 19c4c098e8db747f8884679e0feacc7f, type: 3}
+    volume: 0.5
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: jet4
+    clip: {fileID: 8300000, guid: 19c4c098e8db747f8884679e0feacc7f, type: 3}
+    volume: 0.5
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: startDrag
+    clip: {fileID: 8300000, guid: 684c69b7a257b4eb7bc24b670a91d1d7, type: 3}
+    volume: 0.6666667
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: endDrag
+    clip: {fileID: 8300000, guid: bf642cb89d2f6493e8e6e69b7e5a3558, type: 3}
+    volume: 0.65
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
